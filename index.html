@@ -8,8 +8,27 @@
   </head>
   <body>
     <div class='someStuff' ng-init="show = false">
-      <button ng-click="show=!show">Show</button>
-      <div class="animate" ng-if="show">hello</div>
+      <p>
+        <button ng-click="show=!show">ng-if</button>
+        <div class="if" ng-if="show">hello</div>
+      </p>
+    </div>
+    <div class='hideandshow'>
+      <p>
+        <input type="checkbox" ng-model="here">Checkbox for 'here' expression
+        <div class="theShow" ng-show="here">it's the show directive, it shows when checked</div>
+        <div class="theHide" ng-hide="here">it's the hide directive, it hides when checked</div>
+      </p>
+    </div>
+    <div class='repeatDemo' ng-controller="someCtrl">
+      <p>
+        <button ng-click="add()">Add</button> <button ng-click="remove()">Remove</button>
+        <ul>
+          <li class="wowNumbers" ng-repeat="number in numbers">
+            {{ number }}
+          </li>
+        </ul>
+      </p>
     </div>
   </body>
 </html>

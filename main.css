@@ -1,12 +1,20 @@
-.animate {
+.if {
   font-size: 30px;
-  transition: 5s linear all;
+  transition: .5s linear all;
 }
 
-.animate.ng-enter {
-  opacity: 0;
+.if.ng-enter {
+  font-size: 0;
 }
 
-.animate.ng-enter.ng-enter-active {
-  opacity: 1;
+.if.ng-enter.ng-enter-active {
+  font-size: 30px;
+}
+
+.if.ng-leave {
+	opacity: 1;
+}
+
+.if.ng-leave-active {
+	opacity: 0;
 }
