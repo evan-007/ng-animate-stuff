@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app='myApp'>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="angular-animate.min.js"></script>
+    <script src="app.js"></script>
+    <link rel='stylesheet' href="main.css"/>
+  </head>
+  <body>
+    <div class='someStuff' ng-init="show = false">
+      <button ng-click="show=!show">Show</button>
+      <div class="animate" ng-if="show">hello</div>
+    </div>
+  </body>
+</html>
